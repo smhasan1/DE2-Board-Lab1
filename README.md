@@ -9,7 +9,7 @@ The DE2 board provides 18 toggle switches, called SW17−0 that can be used as i
 
 The DE2 board has hardwired connections between its FPGA chip and the switches and lights. To use SW17−0 and LEDR17−0 it is necessary to include in your Quartus II project the correct pin assignments, which are given in the DE2 User Manual. For example, the manual specifies that SW0 is connected to the FPGA pin N25 and LEDR0 is connected to pin AE23. A good way to make the required pin assignments is to import into the Quartus II software the file called DE2 pin assignments.csv  
 
-
+![image](https://user-images.githubusercontent.com/19510655/34651924-8db194ea-f3a5-11e7-9063-351f870f7ad2.png)
 Figure 1. Verilog code that uses the DE2 board switches and lights.  
 
 The procedure for making pin assignments is described in the  
