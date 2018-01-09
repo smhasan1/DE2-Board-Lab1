@@ -29,7 +29,7 @@ Perform the following steps to implement a circuit corresponding to the code in 
 **Part 2:**  
 Figure 2(a) shows a sum-of-products circuit that implements a 2-to-1 multiplexer with a select input s. If s = 0 the multiplexer’s output m is equal to the input x, and if s = 1 the output is equal to y. Part b of the figure gives a truth table for this multiplexer, and part c shows its circuit symbol.  
 
-
+![image](https://user-images.githubusercontent.com/19510655/34741741-aa41a534-f551-11e7-830d-ec2fe42b34a3.png)
 Figure 2. A 2-to-1 multiplexer.  
 
 The multiplexer can be described by the following Verilog statement:  
@@ -37,12 +37,12 @@ The multiplexer can be described by the following Verilog statement:
 
 Now consider a circuit in which the output m has to be selected from six inputs u, v, w, x, y, and z. Figure 3(a) shows how we can build the required 6-to-1 multiplexer by using five 2-to- 1 multiplexers. The circuit uses a 3-bit select input s2s1s0 and implements the truth table shown in Figure 3(b). A circuit symbol for this multiplexer is given in Figure 3(c).  
 
-
+![image](https://user-images.githubusercontent.com/19510655/34741761-bc0a7e12-f551-11e7-8cd5-4eba241b9741.png)
 Figure 3. A 6-to-1 multiplexer.  
 
 Now imagine that each of the inputs (u, v, w, x, y, and z) are a 3-bit signal rather than a 1-bit one. Figure 4 illustrates how this three-bit wide 6-to-1 multiplexer should look like. It basically contains three instances of the circuit in Figure 3(a), one for every bit.  
 
-
+![image](https://user-images.githubusercontent.com/19510655/34741771-c49fc2f8-f551-11e7-9bc6-de4eae12a592.png)
 Figure 4. A three-bit wide 6-to-1 multiplexer.  
 
 Perform the following steps to implement the three-bit wide 6-to-1 multiplexer.  
@@ -57,7 +57,7 @@ Figure 5 shows a 7-segment decoder module that has the three-bit input c2c1c0. T
 
 The seven segments in the display are identified by the indices 0 to 6 shown in the figure. Each segment is illuminated by driving it to the logic value 0. You are to write a Verilog module that implements logic functions that represent circuits needed to activate each of the seven segments. Use only simple Verilog assign statements in your code to specify each logic function using a Boolean expression.  
 
-
+![image](https://user-images.githubusercontent.com/19510655/34741778-cd781ec0-f551-11e7-9a97-5dcd734b005b.png)
 Figure 5. A 7-segment decoder.  
 
 Table 1  
@@ -87,7 +87,7 @@ Perform the following steps:
 Consider the circuit shown in Figure 6. It uses a three-bit wide 6-to-1 multiplexer to enable the selection of six characters that are displayed on a 7-segment display. Using the 7-segment decoder from Part 3 this circuit can display any of the characters E, E, 3, 2, 0, and 1. The character codes are set according to Table 1 by using the switches SW17−0, and a specific character is selected for display by setting the keys KEY2−0.  
 In the next lab, we will use multiple seven-segment displays to form words from the letters. So, do not delete your Verilog, as you will need to use it next week!  
 
-
+![image](https://user-images.githubusercontent.com/19510655/34741789-d7acdc00-f551-11e7-85ad-8290a9586069.png)
 Figure 6. A circuit that can select and display one of six characters.  
 
 Perform the following steps.  
